@@ -1,16 +1,10 @@
 //global variables
 color blue=#ADFFFE;
-color purple=#E2ADFF;
+color pink=#F20071;
 color regularButton= blue;
-color hoverOverBotton= purple;
+color hoverOverBotton= pink;
 
-
-void setup(){
- size(500,600);
-background(225, 27, 99);
-}
-
-void draw(){
+void quitBottomDraw(){
   println ("mousex:", mouseX, "\tmouseY:", mouseY);
   
   if(mouseX > width*14/16 && mouseX < width && mouseY < height *1/16){
@@ -24,7 +18,7 @@ rect(width*14/16, height*0/16, width*2/16, height*1/16);
  
 }
 //listener
-void mouseClicked(){
+void quitBottomMouseClicked(){
   if(mouseX > width*14/16 && mouseX < width && mouseY < height *1/16) {
   exit();
  }
